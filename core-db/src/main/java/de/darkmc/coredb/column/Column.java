@@ -1,4 +1,4 @@
-package gg.invalid.db.column;
+package de.darkmc.coredb.column;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

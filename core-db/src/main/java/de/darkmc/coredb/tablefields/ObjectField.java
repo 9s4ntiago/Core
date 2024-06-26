@@ -1,2 +1,5 @@
-package de.darkmc.coredb.tablefields;public class ObjectField {
+package de.darkmc.coredb.tablefields;
+
+public class ObjectField
+{
 }

@@ -1,2 +1,9 @@
-package de.darkmc.coreutils;public class MessageBuilder {
+package de.darkmc.coreutils;
+
+public final class MessageBuilder
+{
+    public MessageBuilder()
+    {
+
+    }
 }

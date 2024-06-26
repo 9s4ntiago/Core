@@ -1,4 +1,4 @@
-package gg.invalid.common;
+package de.darkmc.coreutils;
 
 import java.util.HashMap;
 import java.util.Map;

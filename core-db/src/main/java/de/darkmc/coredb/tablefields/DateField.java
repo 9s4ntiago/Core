@@ -1,20 +1,20 @@
 package de.darkmc.coredb.tablefields;
 
-import java.sql.Timestamp;
+import java.sql.Date;
 
-public class TimestampField implements TableField<Timestamp>
+public class DateField implements TableField<Date>
 {
     private final String name;
 
-    public TimestampField(String name)
+    public DateField(String name)
     {
         this.name = name;
     }
 
     @Override
-    public Class<Timestamp> getPrimitiveType()
+    public Class<Date> getPrimitiveType()
     {
-        return Timestamp.class;
+        return Date.class;
     }
 
     @Override
