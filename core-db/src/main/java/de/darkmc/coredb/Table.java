@@ -85,4 +85,9 @@ public abstract class Table
             throw new RuntimeException(e);
         }
     }
+
+    public String getTableName()
+    {
+        return tableName;
+    }
 }

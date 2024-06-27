@@ -11,7 +11,12 @@ public final class SQLContext
     private final Connection connection;
     private final Table usingTable;
 
-    public SQLContext(Connection connection, Table usingTable)
+    public static SQLContext using(Connection connection, Table usingTable)
+    {
+        return new SQLContext(connection, usingTable);
+    }
+
+    private SQLContext(Connection connection, Table usingTable)
     {
         this.connection = connection;
         this.usingTable = usingTable;
