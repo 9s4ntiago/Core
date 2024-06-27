@@ -18,7 +18,7 @@ public abstract class Table
 
     private final Map<String, String> fields = new HashMap<>();
 
-    public Table(String tableName, BasicDataSource dataSource)
+    protected Table(String tableName, BasicDataSource dataSource)
     {
         this.tableName = tableName;
         this.dataSource = dataSource;

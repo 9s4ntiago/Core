@@ -1,0 +1,3 @@
+main: de.darkmc.corebungee.CoreBungee
+version: '${project.version}'
+name: CoreBungee

@@ -7,7 +7,7 @@ import de.darkmc.coredb.tablefields.VarcharField;
 
 public class TableAccounts extends Table
 {
-    public TableAccounts()
+    protected TableAccounts()
     {
         super("accounts", DBPool.ACCOUNT);
     }

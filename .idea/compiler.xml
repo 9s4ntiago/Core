@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="core-utils" />
+        <module name="core-common" />
+        <module name="core-bungee" />
         <module name="core-db" />
+        <module name="core-utils" />
+        <module name="core-spigot" />
       </profile>
     </annotationProcessing>
   </component>

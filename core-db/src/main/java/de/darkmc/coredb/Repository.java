@@ -52,4 +52,34 @@ public abstract class Repository
             throw new RuntimeException(e);
         }
     }
+
+    public void executeUpdate(String query, Column<?>... columns)
+    {
+        executeUpdate(query, null, columns);
+    }
+
+    public void executeQuery(String query, Callback<ResultSet> callback, Column<?>... columns)
+    {
+        try (
+                Connection connection = getConnection();
+                PreparedStatement statement = connection.prepareStatement(query)
+        ) {
+            for (int i = 0; i < columns.length; i++) {
+                columns[i].setValue(statement, i + 1);
+            }
+
+            try (ResultSet resultSet = statement.executeQuery()) {
+                if (callback != null)
+                    callback.callback(resultSet);
+            }
+        }
+        catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void executeQuery(String query, Column<?>... columns)
+    {
+        executeQuery(query, null, columns);
+    }
 }

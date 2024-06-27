@@ -11,6 +11,9 @@
     <modules>
         <module>core-db</module>
         <module>core-utils</module>
+        <module>core-bungee</module>
+        <module>core-spigot</module>
+        <module>core-common</module>
     </modules>
 
     <properties>
